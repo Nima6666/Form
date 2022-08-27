@@ -124,6 +124,10 @@
     font-size: 1.2em;
     transition: all 0.2s ease;
 }
+.form form section:first-child div input[type='number']::-webkit-outer-spin-button,
+.form form section:first-child div input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
 .form form section:first-child input:focus {
     border: 1px solid green;
     border-bottom-width: 2px;
