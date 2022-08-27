@@ -1,0 +1,187 @@
+@font-face {
+    font-family: norseBold;
+    src: url("/Norse-Bold.otf") format("opentype");
+}
+@font-face {
+    font-family: raleway;
+    src: url("/Raleway/Raleway-VariableFont_wght.ttf");
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: raleway;
+}
+.container{
+    display: flex;
+    height: 100vh;
+}
+.pic {
+    background-image: url(/Images/img.jpg);
+    background-size: cover;
+    height: auto;
+    width: 70%;
+    color: white;
+    position: relative;
+}
+.logo {
+    background: rgba(0,0,0,0.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    position: absolute;
+    top: 30%;
+    width: 100%;
+}
+.logo p {
+    font-family: norseBold;
+    font-size: 15vh;
+}
+.logo img{
+    height: 22vh;
+    width: auto;
+}
+.image-dis {
+    position: absolute;
+    bottom: 2vh;
+    width: 100%;
+    text-align: center;
+    text-shadow: 2px 1px #3d2101;
+    color: wheat;
+    font-size: 0.9em;
+    font-family: sans-serif;
+}
+.image-dis a{
+    color: wheat;
+}
+.image-dis a:hover{
+    text-decoration: none;
+}
+
+/* right side */
+
+.details_form{
+    background-color: #eee8e4;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.details_form .details {
+    text-align: left;
+    line-height: 1.5em;
+    letter-spacing: 1px;
+    flex: 0.6;
+    font-size: large;
+    font-weight: bold;
+    padding: 8% 8% 0% 8%;
+}
+.details_form .form {
+    flex: auto;
+    width: 100%;
+    padding: 0% 8% 0% 8%;
+}
+.details_form .details p:last-child{
+    padding-top: 3vh;
+}
+.details_form .form h3 {
+    text-align: left;
+    margin: 6% 0 3% 0;
+}
+.details_form .form form {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: auto;
+}
+.form form section:first-child {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background: whitesmoke;
+    border-radius: 10px;
+}
+.form form section:first-child div {
+    font-size: 0.7em;
+    font-weight: 800;
+    width: 42%;
+    margin: 1vh 0 1vh 0;
+}
+.form form section:first-child input {
+    display: block;
+    height: 35px;
+    width: 100%;
+    margin: 5px 0 5px 0;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding-left: 10px;
+    font-size: 1.2em;
+    transition: all 0.2s ease;
+}
+.form form section:first-child input:focus {
+    border: 1px solid green;
+    border-bottom-width: 2px;
+}
+.form form section:last-child {
+    flex: 0.7;
+}
+
+/* rest */
+
+.form form section:last-child {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.form form section:last-child button {
+    margin-top: 25px;
+    border: none;
+    background: #596D48;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 15px;
+    align-self: flex-start;
+}
+.form form section:last-child .login {
+    align-self: flex-start;
+    margin-top: 15px;
+}
+.form form section:last-child .login a {
+    text-decoration: none;
+    color: #596D48;
+}
+
+@media (max-width: 600px) {
+    .form form section:first-child div{
+        width: 80%;
+    }
+    .form form section:first-child{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+    .container{
+        flex-direction: column;
+        height: 150vh;
+    }
+    .container .pic {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        border-radius: 0 0 5px 5px;
+    }
+    .form form section:last-child {
+        margin-bottom: 20px;
+    }
+    .details_form .details {
+        margin-top: 50px;
+    }
+}
