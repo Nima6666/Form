@@ -17,7 +17,7 @@
     height: 100vh;
 }
 .pic {
-    background-image: url(/Images/img.jpg);
+    background-image: url("/Images/img.jpg");
     background-size: cover;
     height: auto;
     width: 70%;
@@ -164,7 +164,7 @@
     color: #596D48;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
     .form form section:first-child div{
         width: 80%;
     }
